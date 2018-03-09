@@ -1,0 +1,2 @@
+C:\ngithub\DatastructureandAlgortihm\Strings\obj\Debug\Strings.csprojResolveAssemblyReference.cache
+C:\ngithub\DatastructureandAlgortihm\Strings\obj\Debug\Strings.csproj.CoreCompileInputs.cache

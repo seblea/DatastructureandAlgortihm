@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27130.2027
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "divideandconcure", "..\Users\seblewongel\source\repos\ConsoleApp1\ConsoleApp1\divideandconcure.csproj", "{F088DA54-E91B-4902-8C49-72BA3601DB86}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StackProblem", "StackProblem\StackProblem.csproj", "{10A8AC18-73BF-4A00-8113-326C2169C1F9}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Strings", "Strings\Strings.csproj", "{7435CFE2-5A39-4BE3-85E3-02AB54057FC6}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinkedList", "LinkedList\LinkedList.csproj", "{E4D995E1-400E-4A00-AF61-48BA07B76A7C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "divideandconcure", "divideandconcure.csproj", "{F088DA54-E91B-4902-8C49-72BA3601DB86}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{F088DA54-E91B-4902-8C49-72BA3601DB86}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F088DA54-E91B-4902-8C49-72BA3601DB86}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F088DA54-E91B-4902-8C49-72BA3601DB86}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F088DA54-E91B-4902-8C49-72BA3601DB86}.Release|Any CPU.Build.0 = Release|Any CPU
 		{10A8AC18-73BF-4A00-8113-326C2169C1F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{10A8AC18-73BF-4A00-8113-326C2169C1F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{10A8AC18-73BF-4A00-8113-326C2169C1F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -33,6 +29,10 @@ Global
 		{E4D995E1-400E-4A00-AF61-48BA07B76A7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E4D995E1-400E-4A00-AF61-48BA07B76A7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E4D995E1-400E-4A00-AF61-48BA07B76A7C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F088DA54-E91B-4902-8C49-72BA3601DB86}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F088DA54-E91B-4902-8C49-72BA3601DB86}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F088DA54-E91B-4902-8C49-72BA3601DB86}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F088DA54-E91B-4902-8C49-72BA3601DB86}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,0 +1,2 @@
+C:\ngithub\DatastructureandAlgortihm\obj\Debug\divideandconcure.csprojResolveAssemblyReference.cache
+C:\ngithub\DatastructureandAlgortihm\obj\Debug\divideandconcure.csproj.CoreCompileInputs.cache

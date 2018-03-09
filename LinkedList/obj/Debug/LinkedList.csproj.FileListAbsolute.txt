@@ -1,0 +1,2 @@
+C:\ngithub\DatastructureandAlgortihm\LinkedList\obj\Debug\LinkedList.csprojResolveAssemblyReference.cache
+C:\ngithub\DatastructureandAlgortihm\LinkedList\obj\Debug\LinkedList.csproj.CoreCompileInputs.cache
