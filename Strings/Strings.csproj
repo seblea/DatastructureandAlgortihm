@@ -43,8 +43,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="checkStringPermutations.cs" />
+    <Compile Include="MXNMatrix.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="replaceSpaceinString.cs" />
+    <Compile Include="StringCompression.cs" />
     <Compile Include="Stringhasunique.cs" />
   </ItemGroup>
   <ItemGroup>

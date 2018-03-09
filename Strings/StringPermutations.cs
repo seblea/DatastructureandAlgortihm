@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Strings
 {
-    class CheckStringPermutations //check tow strings are permutations
+    class StringPermutations
     {
         public static void Permutations(string st1, string st2) // with out extra buffer
         {

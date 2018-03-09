@@ -9,7 +9,7 @@ namespace LinkedList
     class IsCircular
     {  //  check the double linked list is circular or not
 
-        public static void Circular(DoubleLinkedList dl) //using two pointer fast and slow 
+        public static void Circular(SingleLinkedList dl) //using two pointer fast and slow 
         {
 
             Node fast=dl.Head.Next.Next; // two node ahead 
