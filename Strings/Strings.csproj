@@ -43,6 +43,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="checkStringPermutations.cs" />
+    <Compile Include="Class1.cs" />
     <Compile Include="LongSubSequence.cs" />
     <Compile Include="MXNMatrix.cs" />
     <Compile Include="Program.cs" />

@@ -1,1 +1,2 @@
 C:\ngithub\DatastructureandAlgortihm\StackProblem\obj\Debug\StackProblem.csproj.CoreCompileInputs.cache
+C:\ngithub\DatastructureandAlgortihm\StackProblem\obj\Debug\StackProblem.csprojResolveAssemblyReference.cache

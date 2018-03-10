@@ -8,7 +8,7 @@ namespace Divideandconcure
 {
    static class Rotateunknownnumber
     {
-        static void Rotatate(int[] b)
+       public static void Rotatate(int[] b)
         {
             string st;
             int rot;

@@ -1,2 +1,6 @@
-C:\ngithub\DatastructureandAlgortihm\obj\Debug\divideandconcure.csprojResolveAssemblyReference.cache
 C:\ngithub\DatastructureandAlgortihm\obj\Debug\divideandconcure.csproj.CoreCompileInputs.cache
+C:\ngithub\DatastructureandAlgortihm\bin\Debug\ArrayProblem.exe.config
+C:\ngithub\DatastructureandAlgortihm\bin\Debug\ArrayProblem.exe
+C:\ngithub\DatastructureandAlgortihm\bin\Debug\ArrayProblem.pdb
+C:\ngithub\DatastructureandAlgortihm\obj\Debug\ArrayProblem.exe
+C:\ngithub\DatastructureandAlgortihm\obj\Debug\ArrayProblem.pdb

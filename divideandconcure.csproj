@@ -48,7 +48,6 @@
     <Compile Include="GetArray.cs" />
     <Compile Include="GetSorrtedArray.cs" />
     <Compile Include="Magicindex.cs" />
-    <Compile Include="splitarraysum.cs" />
     <Compile Include="Adjacentelement.cs" />
     <Compile Include="findduplicate.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
