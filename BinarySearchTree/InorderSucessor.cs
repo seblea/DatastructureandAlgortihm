@@ -9,7 +9,7 @@ namespace BinaryTree
 {
     public class InorderSucessor // for binary search tree
     {
-        public static void Sucessor(BinaryTreeNode root , char look) // BinaryTree node data is character 
+        public static void Sucessor(BinaryTreeNode root , char look) // BinaryTree node data is character  
         {
              Stack<BinaryTreeNode> Stak = new Stack<BinaryTreeNode>();
 
@@ -17,8 +17,10 @@ namespace BinaryTree
 
              BinaryTreeNode su = new BinaryTreeNode();
 
-              
-            //Inorder Sucessor of a node will be find in the right left most of the given node
+
+            //Inorder Sucessor of a node will be find in the right left most of the given node , if the node has no right node , the parent will be inorder suessor
+
+            su = No;
             if (su.right == null)
             {
                 su = su.parent;
