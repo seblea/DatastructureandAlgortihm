@@ -12,5 +12,9 @@ namespace LinkedList
       public  BinaryTreeNode left=null;
       public  BinaryTreeNode right=null;
       public  char data;
+      public int rh=-1;
+      public int lh=-1;
+      public int h=0;
+
     }
 }
