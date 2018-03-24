@@ -1,0 +1,1 @@
+C:\ngithub\DatastructureandAlgortihm\Tree1\obj\Debug\Tree1.csproj.CoreCompileInputs.cache

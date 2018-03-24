@@ -17,8 +17,11 @@ namespace BinaryTree
 
 
             //Inorder Sucessor of a node will be find in the right left most of the given node . in the right node if the node has no left node , the parent will be inorder suessor
-
+            
             su = No.right;
+
+            if (su == null)
+                return null;
 
             while (su.left != null)
             {
