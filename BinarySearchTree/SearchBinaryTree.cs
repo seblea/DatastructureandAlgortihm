@@ -9,7 +9,7 @@ namespace BinaryTree
 {
    public  class SearchBinaryTree // seaarc in binary search tree
     {
-      public static BinaryTreeNode BinarySearchHeight(BinaryTreeNode root, BinaryTreeNode data) // return the node with updating the of the height of the node 
+      public static BinaryTreeNode BinarySearchHeight(BinaryTreeNode root, BinaryTreeNode data) // return the node with updating the of the level of depth of the node 
         {
             bool found = false;
             BinaryTreeNode ro = root;

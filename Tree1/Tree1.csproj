@@ -42,6 +42,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ArrayToBST.cs" />
+    <Compile Include="BSTisBalanced.cs" />
+    <Compile Include="BSTToDobleLinkedList.cs" />
+    <Compile Include="CheckBinarytreeisBST.cs" />
     <Compile Include="Linkedlistforeachdepth.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

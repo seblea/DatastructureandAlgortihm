@@ -42,7 +42,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ArraytobalancedBST.cs" />
     <Compile Include="BinaryTreeNode.cs" />
     <Compile Include="CloneLinke.cs" />
     <Compile Include="CreateDoubleLinkList.cs" />
@@ -51,6 +50,7 @@
     <Compile Include="GetKthtotheLast.cs" />
     <Compile Include="IsCircular.cs" />
     <Compile Include="LinkedList.cs" />
+    <Compile Include="LinkedtobalancedBSTrecursion.cs" />
     <Compile Include="NewSinglyLinked.cs" />
     <Compile Include="Node.cs" />
     <Compile Include="PartitionLinkedList.cs" />

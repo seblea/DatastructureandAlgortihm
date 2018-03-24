@@ -12,9 +12,10 @@ namespace LinkedList
       public  BinaryTreeNode left=null;
       public  BinaryTreeNode right=null;
       public  object data;
-      public int rh=-1;
-      public int lh=-1;
-      public int h=0;
+      public int rh=-1;// right height
+      public int lh=-1;//left height
+      public int h=0;//height
+      public int depth=0;//
 
         public  int CompareTo(BinaryTreeNode obj) // object should be binaryTree 
         {
@@ -26,8 +27,8 @@ namespace LinkedList
 
             if (ty == typeof(int))
             {
-                int ifirst = Convert.ToInt32(this.data);
-                int isecond = Convert.ToInt32(obj.data);
+                int ifirst = Convert.ToInt32(this.data); // this node is greater than 
+                int isecond = Convert.ToInt32(obj.data); // this node is less than 
 
                 if (obj != null)
 

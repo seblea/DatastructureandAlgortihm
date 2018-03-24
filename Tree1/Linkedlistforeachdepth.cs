@@ -11,7 +11,7 @@ namespace tree1
     class inkedlistforeachdepth
     {  //Given a BST ,creat a linked list of all nodes at each depth 
 
-        public static Node Creat(BinaryTreeNode root) // Data value of the linked list is a node.Each node in the linked list hold  head of each depth as data .linked list of linked list 
+        public static void Creat(BinaryTreeNode root) // Data value of the linked list is a node.Each node in the linked list hold  head of each depth as data .linked list of linked list 
         { //using breadth traversal
 
             // Node data is object type 
@@ -104,20 +104,22 @@ namespace tree1
 
             }
 
-
+            // dispaly the result 
             parent = head;
             count = 0; // Level 
             while(parent != null)
             {
                 Console.WriteLine(" Nodes of Level {0}", count);
-                iterator = (Node)(head.data); // inner iterator
+                iterator = (Node)(parent.data); // inner iterator
 
                 while(iterator != null)
-                {  Console.Write("{0}")
+                {
+                    Console.Write("{0}=>");
 
                 }
 
-
+                count++;
+                parent = parent.Next;
             }
             
           
