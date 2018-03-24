@@ -7,70 +7,39 @@ using LinkedList;
 
 namespace BinaryTree
 {
-    class SearchBinaryTree
+   public  class SearchBinaryTree // seaarc in binary search tree
     {
-        public static BinaryTreeNode BinarySearchTree(BinaryTreeNode root, char data)
+      public static BinaryTreeNode BinarySearchHeight(BinaryTreeNode root, BinaryTreeNode data) // return the node with updating the of the height of the node 
         {
             bool found = false;
             BinaryTreeNode ro = root;
-
-            while (found == false && ro != null)
-            {
-                if (ro.data == data)
-                    found = true;
-                else
-                {
-                    if (ro.data > data)
-                    {
-                        ro = ro.left;
-                    }
-                    else
-                    {
-                        ro = ro.right;
-                    }
-                }
-            }
-
-            return ro;
-        }
-
-
-        public static BinaryTreeNode SearchNode(BinaryTreeNode root, char data, out int height)
-        {
+            int height = 0;
 
             
-
-        }
-        
-
-        public static BinaryTreeNode BinarySearchHeight(BinaryTreeNode root, char data, out int height) // return the node with the height 
-        {
-            bool found = false;
-            BinaryTreeNode ro = root;
-            height = 0;
             while (found == false && ro != null)
             {
-                if (ro.data == data)
+                if (ro.CompareTo(data)==0)
                     found = true;
                 else
                 {
-                    if (ro.data > data)
+                    if (ro.CompareTo(data) < 0)
                     {
                         ro = ro.left;
-                       
+                        
                     }
                     else
                     {
                         ro = ro.right;
                     }
 
-                    height++;
+                    height++; // track the depth
                 }
             }
 
+            ro.h = height;
             return ro;
         }
-
+      
 
     }
 }

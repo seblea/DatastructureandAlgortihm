@@ -9,38 +9,23 @@ namespace BinaryTree
 {
     public class InorderSucessor // for binary search tree
     {
-        public static void Sucessor(BinaryTreeNode root , char look) // BinaryTree node data is character  
+        public static BinaryTreeNode Sucessor(BinaryTreeNode root , BinaryTreeNode look) // BinaryTree node data is character  look is binarytree node
         {
-             Stack<BinaryTreeNode> Stak = new Stack<BinaryTreeNode>();
-
-             BinaryTreeNode No =SearchBinaryTree.BinarySearchTree(root, look); // class that will find the node 
+             BinaryTreeNode No =SearchBinaryTree.BinarySearchHeight(root, look); // class that will find the node in Binary search tree
 
              BinaryTreeNode su = new BinaryTreeNode();
 
 
-            //Inorder Sucessor of a node will be find in the right left most of the given node , if the node has no right node , the parent will be inorder suessor
+            //Inorder Sucessor of a node will be find in the right left most of the given node . in the right node if the node has no left node , the parent will be inorder suessor
 
-            su = No;
-            if (su.right == null)
+            su = No.right;
+
+            while (su.left != null)
             {
-                su = su.parent;
+                su = su.left;
+               
             }
-
-             else
-            {
-                su = No.right;
-                while (su.left != null)
-                {
-                    su = su.left;
-
-                }
-            }
-            if(su!=null)
-
-                Console.WriteLine(" Inorder Sucessor is {0}", su.data);
-            else
-
-                Console.WriteLine("there is no  Inorder Sucessor for the given node" );
+            return su;
         }
 
       

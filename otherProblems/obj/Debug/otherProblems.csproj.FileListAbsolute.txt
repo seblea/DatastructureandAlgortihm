@@ -1,0 +1,7 @@
+C:\ngithub\DatastructureandAlgortihm\otherProblems\bin\Debug\otherProblems.exe.config
+C:\ngithub\DatastructureandAlgortihm\otherProblems\bin\Debug\otherProblems.exe
+C:\ngithub\DatastructureandAlgortihm\otherProblems\bin\Debug\otherProblems.pdb
+C:\ngithub\DatastructureandAlgortihm\otherProblems\obj\Debug\otherProblems.csproj.CoreCompileInputs.cache
+C:\ngithub\DatastructureandAlgortihm\otherProblems\obj\Debug\otherProblems.exe
+C:\ngithub\DatastructureandAlgortihm\otherProblems\obj\Debug\otherProblems.pdb
+C:\ngithub\DatastructureandAlgortihm\otherProblems\obj\Debug\otherProblems.csprojResolveAssemblyReference.cache

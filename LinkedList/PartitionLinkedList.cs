@@ -8,7 +8,7 @@ namespace LinkedList
 {
     class PartitionLinkedList
     {
-        public static void Partition(DoubleLinkedList lt,Char x) // revious pointer is linear 
+        public static void Partition(DoubleLinkedList lt,object x) // revious pointer is linear 
         {
             Node iter = lt.Head;
 
@@ -69,7 +69,7 @@ namespace LinkedList
             next = look; // pointer around the partion node , right ptr where moved node being inserted
 
             while (iter != null)
-            {  if(iter.data >= look.data && dir =='L') // move the node right to
+            {  if(iter.CompareTo(look.data) >= 0 && dir =='L') // move the node right to
                 {
                     //deletion 
                     INext.prev = IPrev; // set prvious ptr of the next node 

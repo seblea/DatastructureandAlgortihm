@@ -16,14 +16,14 @@ namespace BinaryTree
             Queue<BinaryTreeNode> que = new Queue<BinaryTreeNode>();
 
             BinaryTreeNode ro = root;
+                      
 
 
-
-            while (stak != null && ro != null)
+            while (stak.Count > 0 || ro != null) 
             {
                 if (ro != null)
                 {
-                    stak.Push(ro);
+                    stak.Push(ro); // push parent's 
                     ro = ro.left;
                 }
                 else

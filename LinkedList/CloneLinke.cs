@@ -13,6 +13,8 @@ namespace LinkedList
             Node next ;
             bool cont = true; // loop controler
 
+            object ob = dl.Head.data;
+
             if(current ==null)
             {
                 Console.WriteLine("Empty List ");
@@ -21,7 +23,7 @@ namespace LinkedList
             }
 
             DoubleLinkedList CloneHead = new DoubleLinkedList(); // POINTER to the head of the clone
-            Node ClonePointer = new Node(); // poiner for the clone
+            Node ClonePointer = new Node(ob); // poiner for the clone
             CloneHead.Head = ClonePointer;
 
             while (cont==true) //set Node that cloned point  to clone node ,clone node point to the next node of the cloned node 
@@ -33,7 +35,7 @@ namespace LinkedList
 
                 if(current != null)
                 
-                   ClonePointer = new Node(); // follower for the clone
+                   ClonePointer = new Node(ob); // follower for the clone
                 else
                     break;
                 

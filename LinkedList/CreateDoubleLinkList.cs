@@ -13,6 +13,7 @@ namespace LinkedList
             DoubleLinkedList li = new DoubleLinkedList();
             char ch;
             int x;
+            object ob = li.Head.data;
 
             bool continu = true;
 
@@ -25,7 +26,7 @@ namespace LinkedList
                 {
                     x = Console.Read();
                     ch = Convert.ToChar(x);
-                    Node n = new Node();
+                    Node n = new Node(ob);
                     n.data = ch;
                     li.Add(n);
 

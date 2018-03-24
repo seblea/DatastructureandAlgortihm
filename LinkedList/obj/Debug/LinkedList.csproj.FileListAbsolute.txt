@@ -4,3 +4,4 @@ C:\ngithub\DatastructureandAlgortihm\LinkedList\bin\Debug\LinkedList.exe
 C:\ngithub\DatastructureandAlgortihm\LinkedList\bin\Debug\LinkedList.pdb
 C:\ngithub\DatastructureandAlgortihm\LinkedList\obj\Debug\LinkedList.exe
 C:\ngithub\DatastructureandAlgortihm\LinkedList\obj\Debug\LinkedList.pdb
+C:\ngithub\DatastructureandAlgortihm\LinkedList\obj\Debug\LinkedList.csprojResolveAssemblyReference.cache

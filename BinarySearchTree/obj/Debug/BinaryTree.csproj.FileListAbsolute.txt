@@ -1,0 +1,2 @@
+C:\ngithub\DatastructureandAlgortihm\BinarySearchTree\obj\Debug\BinaryTree.csprojResolveAssemblyReference.cache
+C:\ngithub\DatastructureandAlgortihm\BinarySearchTree\obj\Debug\BinaryTree.csproj.CoreCompileInputs.cache
