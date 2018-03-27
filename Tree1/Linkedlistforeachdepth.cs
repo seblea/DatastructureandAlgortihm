@@ -11,29 +11,39 @@ namespace tree1
     class inkedlistforeachdepth
     {  //Given a BST ,creat a linked list of all nodes at each depth 
 
-        public static void Creat(BinaryTreeNode root) // Data value of the linked list is a node.Each node in the linked list hold  head of each depth as data .linked list of linked list 
+        public static void Creat(BinaryTreeNode root) // The stack holds the head node of each depth
         { //using breadth traversal
 
-            // Node data is object type 
 
-            Queue<BinaryTreeNode> que = new Queue<BinaryTreeNode>(); // to track the node of the next depth
+            if (root == null)
+            {
+                Console.WriteLine("Tree has no node");
+                return;
+            }
 
-            // head of the outer linked list linked list
+            Queue<BinaryTreeNode> que = new Queue<BinaryTreeNode>(); // to push the childern node of the current level
 
-            Node parent =null; //  , outer linked list iterator 
-            Node parent2 = null;// In each dpeth inner  linked list iterator 
-            Node iterator = parent; // iterat through the queue 
+           
+            //// Node data is object type 
+          
+            Node previous = null; // iterat through the queue 
+
+            
+           
+
+            // stack contain head  of  linked  list of each level 
+
+            Stack<Node> level = new Stack<Node>();
 
             int current = 0;// to track number of node in current  depth
-
             int count = 0;// to track number of node that should be DeEnque at each depth .
             int next = 0; // counter for possible number of next depth node 
 
             BinaryTreeNode tempnode = null;
 
             Node temp = new Node(root.data); // copy binary tree data to linked list node
-            Node head = new Node(temp); //  this node hold in the linked list as data ,head of outer linked list
-            parent = head;// outer linked list iterator 
+            var data=root.data; // for diplaying
+            level.Push(temp); // first push the root 
 
           
             if(root.left != null)
@@ -52,7 +62,7 @@ namespace tree1
 
             }
 
-
+           // already we Eneque the root childern .
 
             while (que.Count > 0) //  till no node to DeEnque 
             {
@@ -60,31 +70,31 @@ namespace tree1
                 current = next;
                 next = 0; 
 
-                while (count > 0) // deenque 
+                while (count > 0) // 
                 {
                     tempnode = que.Dequeue();
 
-                    if (count == current) // the new level start .head of the current depth should b , current will not update throught the current depth 
+                    if (count == current) // the new level start .head of the current depth  
                     {
-                        Node li2 = new Node(tempnode.data); // copy binary tree data to linked list node
-                        parent2 = li2; // inner linked list
+                        Node headli = new Node(tempnode.data); // copy binary tree data to linked list node
+                        previous = headli; //  linked list pointer 
 
-                        Node head2 = new Node(li2); //  this node hold in the linked list as data ,the head of the current depth 
-                        parent.Next = head2; // the outer linked list
-                        head2.prev = parent;
-                        parent = head2; // track for the next node  
+                        level.Push(headli);
+                        
+                      
                     }
                     else
                     {
-                        Node li2 = new Node(tempnode.data); // copy binary tree data to the node
-                        parent2.Next = li2;
-                        li2.prev = parent2;
-                        parent2 = li2; // inner linked list iterator 
+                        Node levelnode = new Node(tempnode.data); // copy binary tree data to the node
+                        previous.Next = levelnode;
+                        levelnode.prev = previous;
+                        previous = levelnode; // linked list iterator 
 
+                        level.Push(levelnode);
 
                     }
 
-                    // truck next level number of childern and Enque next level childern
+                    // truck next level number of childern and Eneque next level childern
                     if (tempnode.left != null)
                     {
                         que.Enqueue(tempnode.left);
@@ -105,25 +115,27 @@ namespace tree1
             }
 
             // dispaly the result 
-            parent = head;
-            count = 0; // Level 
-            while(parent != null)
+           
+            count = que.Count; // Level 
+            while(level != null)
             {
+                temp = level.Pop(); // head of the linked list
                 Console.WriteLine(" Nodes of Level {0}", count);
-                iterator = (Node)(parent.data); // inner iterator
-
-                while(iterator != null)
+                
+                while(temp != null) // 
                 {
-                    Console.Write("{0}=>");
+                    data = temp.data;
+                    Console.Write("{0}=>",data);
+                    temp = temp.Next;
 
                 }
 
                 count++;
-                parent = parent.Next;
+                
             }
             
           
-            // return head ;
+            // return level ;
         }
     }
 }

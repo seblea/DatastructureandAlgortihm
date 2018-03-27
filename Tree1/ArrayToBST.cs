@@ -28,9 +28,9 @@ namespace Tree1
         }
 
 
-        // using recursion
+        // using recursion divided and conqure 
 
-        static BinaryTreeNode BSTRecursion(object [] ar,int  start, int end) // given the start and end of the linked list return the middle as root , left and right root as left and right 
+        static BinaryTreeNode BSTRecursion(object [] ar,int  start, int end) // given the start and end of the array index set the middle + 1 as root .
         {
         
             BinaryTreeNode root = new BinaryTreeNode();
@@ -40,8 +40,12 @@ namespace Tree1
                 root.data = ar[start];
                 return root;
             }
+            else if(start < end)
+            {
+                return null;
+            }
 
-            int count = start - end;
+            int count = start - end + 1;//
 
             BinaryTreeNode left = new BinaryTreeNode();
             BinaryTreeNode right = new BinaryTreeNode();
@@ -60,8 +64,10 @@ namespace Tree1
 
                 left = BSTRecursion(ar,start, mid-1);
                 right = BSTRecursion(ar,mid+1, end);
+
                 root.left = left;
                 left.parent = root;
+
                 root.right = right;
                 right.parent = root;
 

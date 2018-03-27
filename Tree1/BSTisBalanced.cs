@@ -13,7 +13,7 @@ namespace Tree1
         {
             bool result = true;
 
-            int rootheight = Balanced(root, ref result);
+            int Treeheight = Balanced(root, ref result);
 
             if (result == true)
                 Console.WriteLine(" BST is Balanced");
@@ -25,12 +25,12 @@ namespace Tree1
 
 
 
-        public static int Balanced(BinaryTreeNode root ,ref  bool bala) // returns the height  . compare left and right height update bala ,
+        public static int Balanced(BinaryTreeNode root ,ref  bool bala) // default valu of balla is true.The function  returns the its height to the parent then  compare left and right height update bala ,
             //bala is common for all each recursion,since it is by reference . each recursion will update it if only if  the difference between left height and right height 
-            //is greter than one 
+            //is greter than one ,when it is unblanced .
         {
             if (root == null) // leaf node right or left height is -1
-                return -1;
+                return 0;
 
             int left=-1;
             int right=-1;
@@ -45,9 +45,9 @@ namespace Tree1
             if (Math.Abs(root.lh - root.rh) > 1) // if the right and left height difference is greater than 1 Using AVL it is not balanced
                 bala = false;
             else
-                bala = (bala && true);
+                bala = (bala && true); // we have to keep the lower depth result 
 
-               root.h = ((root.lh > root.rh) ? root.lh : root.rh) +1 ;// take the maximum 
+               root.h = ((root.lh > root.rh) ? root.lh : root.rh) +1 ;// take the maximum from left and right height
 
             return root.h;
 
