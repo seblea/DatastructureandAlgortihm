@@ -22,7 +22,7 @@ namespace BinaryTree
                 {
                     foreach (int t in st)
                     {
-                        Console.WriteLine("{0}->", t);
+                        Console.Write("{0}->", t);
                     }
                     Console.WriteLine();
                 }
