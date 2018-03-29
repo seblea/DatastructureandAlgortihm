@@ -40,7 +40,7 @@ namespace Tree1
                 root.data = ar[start];
                 return root;
             }
-            else if(start < end)
+            else if(start  > end)
             {
                 return null;
             }
