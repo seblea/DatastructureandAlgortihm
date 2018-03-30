@@ -5,29 +5,41 @@ using System.Text;
 using System.Threading.Tasks;
 using LinkedList;
 
-namespace BinarySearchTree
+namespace BinaryTree
 {
     class BuildHeap
     {
-        public static Node  Heap(object[] arr)
+        public static void  Heap(int[] arr)
          {
-            Node root= new Node();
+            int n= arr.Length;
+            int ind;
 
-            Node n;
-            root = null;
+            int temp;
 
-            Queue<object> temp = new Queue<object> ;
+             
+                for (int i = ((n -1)/ 2); i <= 0; i--) // n/2 + 1 .... n  are all leaf nead
+                {
+                    ind =( i * 2) +1;
+                    if (arr[i] > arr[ind])
+                    {
+                        temp = arr[i];
+                        arr[i] = arr[ind];
+                        arr[ind] = temp;
+                    }
 
-            for(int i=0; i< arr.Length; i++)
-            {
-                if (root == null)
-                    root.data = arr[i];
-                else
-                  { n = new Node();
-                
-                  
+                    if (ind + 1 < n)
+                    {
+                        temp = arr[i];
+                        arr[i] = arr[ind + 1];
+                        arr[ind + 1] = temp;
+                    }
 
-            }
+
+                }
+
+               
+
+          
 
         }
     }
