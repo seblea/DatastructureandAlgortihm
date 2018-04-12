@@ -45,6 +45,7 @@
     <Compile Include="DutchFlagProblem.cs" />
     <Compile Include="GCD.cs" />
     <Compile Include="InfixtoPostfix.cs" />
+    <Compile Include="MNqueen.cs" />
     <Compile Include="MostFrequentWord.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
