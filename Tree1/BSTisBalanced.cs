@@ -47,7 +47,8 @@ namespace Tree1
             else
                 bala = (bala && true); // we have to keep the lower depth result 
 
-               root.h = ((root.lh > root.rh) ? root.lh : root.rh) +1 ;// take the maximum from left and right height
+
+            root.h = ((root.lh > root.rh) ? root.lh : root.rh) +1 ;// take the maximum from left and right height
 
             return root.h;
 

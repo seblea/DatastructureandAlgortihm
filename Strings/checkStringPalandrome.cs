@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace Strings
 {
-    class CheckStringPermutations //check tow strings are permutations
+    class CheckStringPalandrom //check tow strings are permutations
     {
-        public static void Permutations(string st1, string st2) // with out extra buffer
+        public static void Palandrom(string st1, string st2) // with out extra buffer
         {
             bool found = false;
             int count = 0;
@@ -37,10 +37,10 @@ namespace Strings
             }
 
             if (found == true)
-                Console.WriteLine("No,One is not permutations of the others");
+                Console.WriteLine("No,One is not Palandrom of the others");
             else
 
-                Console.WriteLine("Yes, One is permutations of the others");
+                Console.WriteLine("Yes, One is Palandrome of the others");
 
 
         }

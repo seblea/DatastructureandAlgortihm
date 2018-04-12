@@ -43,6 +43,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DutchFlagProblem.cs" />
+    <Compile Include="GCD.cs" />
     <Compile Include="InfixtoPostfix.cs" />
     <Compile Include="MostFrequentWord.cs" />
     <Compile Include="Program.cs" />

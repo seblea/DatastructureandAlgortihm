@@ -14,7 +14,7 @@ namespace BinaryTree
             List<Stack<int>> ans=new List<Stack<int>>(); 
            
             List<Stack<int>> allpath;
-            allpath = ValSum(ro, val, ref ans);
+            allpath = ValSum(ro, val,  ans);
 
             if (ans != null)
             {
@@ -31,7 +31,7 @@ namespace BinaryTree
                 Console.WriteLine("There is no any path");
         }
 
-        public static List<Stack<int>> ValSum(BinaryTreeNode root, int val, ref List<Stack<int>> ans) // return to calling all possible path from the leaf  
+        public static List<Stack<int>> ValSum(BinaryTreeNode root, int val,  List<Stack<int>> ans) // return to calling all possible path from the leaf  
         {
             List<Stack<int>> left = null;
             List<Stack<int>> right = null;
@@ -47,10 +47,10 @@ namespace BinaryTree
                 return null;
 
             if (root.left != null)
-                left = ValSum(root.left, val,ref ans);
+                left = ValSum(root.left, val, ans);
 
             if (root.right != null)
-                right = ValSum(root.left, val,ref ans);
+                right = ValSum(root.left, val, ans);
 
 
 

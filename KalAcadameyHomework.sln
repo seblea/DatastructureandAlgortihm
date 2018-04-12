@@ -21,6 +21,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "graph", "..\graph\graph.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tree1", "Tree1\Tree1.csproj", "{4625232C-F489-40DF-A1E1-AB524A5A7209}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DynamicProgramming", "..\DynamicProgramming\DynamicProgramming.csproj", "{74BFB59D-8F7D-4F75-BF7E-4E441CABBCED}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +65,10 @@ Global
 		{4625232C-F489-40DF-A1E1-AB524A5A7209}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4625232C-F489-40DF-A1E1-AB524A5A7209}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4625232C-F489-40DF-A1E1-AB524A5A7209}.Release|Any CPU.Build.0 = Release|Any CPU
+		{74BFB59D-8F7D-4F75-BF7E-4E441CABBCED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74BFB59D-8F7D-4F75-BF7E-4E441CABBCED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74BFB59D-8F7D-4F75-BF7E-4E441CABBCED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74BFB59D-8F7D-4F75-BF7E-4E441CABBCED}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

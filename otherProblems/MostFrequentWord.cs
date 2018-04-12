@@ -18,7 +18,7 @@ namespace otherProblems
             Hashtable words = new Hashtable(); // hold  all words with their frequncy 
 
            
-            words = Words(st);
+            words = Words(st); // // GET WORDS WITH THEIR FREQUENCY 
 
             int i = 0; // to count distinct frequency of words 
             int j = 0;
@@ -27,7 +27,7 @@ namespace otherProblems
             {
                 if (i == 0) // there is no any element at first , just add 
                 {
-                    te.Add(ent.Value, ent.Key); 
+                    te.Add(ent.Value, ent.Key); // key become frequency value 
                     temp[i] = (int)ent.Key;
                     i++;
                 }
@@ -107,7 +107,7 @@ namespace otherProblems
             int sta = 0;// Index  for the beginning of the word
             int end = 0; // word separater found , 
             int i = 0; // counter for each character
-            string temp; // temporarly to store the word
+            String  temp; // temporarly to store the word
             while (sta < st.Length)
             {
                 if (st[sta] == ' ' || st[sta] == '&' || st[sta] == '(' || st[sta] == ')' || st[sta] == '.') 
