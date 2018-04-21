@@ -21,7 +21,7 @@ namespace otherProblems
             words = Words(st); // // GET WORDS WITH THEIR FREQUENCY 
 
             int i = 0; // to count distinct frequency of words 
-            int j = 0;
+            int j = 0; // counter where minimum word frequency stored 
 
             foreach (DictionaryEntry ent in words)  // sorting distinct top values in descending order
             {
@@ -33,14 +33,14 @@ namespace otherProblems
                 }
                 else 
                 {
-                      if (i < x) 
-                         j = i;
+                      if (i < x)  // number of words get is less than number of words required
+                         j = i; 
                       else
                         j = x; // index where the minimum frequency is stored 
 
                     if (!te.ContainsKey(ent.Value)) // to get distinct frequency , i hold number of distinct frequency 
                     {
-                        if (i == j) // which means still we didn't pick x words 
+                        if (i == j) // which means still we didn't pick x words , maximum words we want
                         {
                             temp[j] = (int)ent.Value;
                             te.Add(ent.Value, ent.Key);
@@ -114,14 +114,14 @@ namespace otherProblems
                 {
                     if (sta == end) // // beginning of the word ignore
                         sta = i + 1;
-                    else
+                    else // word separator
                     {
                         temp = st.Substring(sta, end - sta).ToUpper(); //
                          // you can have collection of all most common words in english in hash table and avoid considering them here 
 
                         if (temp == "THE" || temp == "IS" || temp == "WAS" || temp == "WERE" || temp == "IT" || temp == "A" || temp == "GOT" || temp == "GET") // if you found these words ignore
                         {
-                            sta = i + 1;
+                            sta = i + 1;// word start with the next chharachter
                         }
 
                         else
