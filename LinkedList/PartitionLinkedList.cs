@@ -1,4 +1,7 @@
-﻿using System;
+﻿/**
+ 
+ 
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -25,6 +28,7 @@ namespace LinkedList
              *    create and expand partion arround the give node.if the node requires moving ,move to next to the given node .if the node is in the right side leave ,don't move .
              *    
              * **/
+/**
             if (lt.Head != null) // check there is an element in the list
             {
 
@@ -100,9 +104,14 @@ namespace LinkedList
 
                               }
 
+                              **/
+
+              /**                
              else if (iter.data < look.data && dir == 'R') //Move to the left
                     {
+            **/
 
+            /**
                         INext.prev = IPrev; //deletion
                         IPrev.Next = INext;
 
@@ -151,3 +160,5 @@ namespace LinkedList
         }
     }
 }
+
+**/

@@ -1,2 +1,6 @@
-C:\ngithub\DatastructureandAlgortihm\Strings\obj\Debug\Strings.csprojResolveAssemblyReference.cache
 C:\ngithub\DatastructureandAlgortihm\Strings\obj\Debug\Strings.csproj.CoreCompileInputs.cache
+C:\ngithub\DatastructureandAlgortihm\Strings\bin\Debug\Strings.exe.config
+C:\ngithub\DatastructureandAlgortihm\Strings\bin\Debug\Strings.exe
+C:\ngithub\DatastructureandAlgortihm\Strings\bin\Debug\Strings.pdb
+C:\ngithub\DatastructureandAlgortihm\Strings\obj\Debug\Strings.exe
+C:\ngithub\DatastructureandAlgortihm\Strings\obj\Debug\Strings.pdb

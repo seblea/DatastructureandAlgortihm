@@ -44,12 +44,14 @@
   <ItemGroup>
     <Compile Include="DecimaltoBinary.cs" />
     <Compile Include="DutchFlagProblem.cs" />
+    <Compile Include="FirstNotRepeatingCharacter.cs" />
     <Compile Include="GCD.cs" />
     <Compile Include="InfixtoPostfix.cs" />
     <Compile Include="MNqueen.cs" />
     <Compile Include="MostFrequentWord.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="rotatetheimage.cs" />
     <Compile Include="TextSplitJustificaion.cs" />
   </ItemGroup>
   <ItemGroup>

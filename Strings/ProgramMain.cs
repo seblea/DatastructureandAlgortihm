@@ -4,14 +4,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace otherProblems
+namespace Strings
 {
-    class Program
-    {
-        static void Main(string[] args)
+    class programmain
         {
-            FirstNotRepeatingCharacter.First();
+            public static void Main()
+            {
 
+            }
         }
     }
-}
+
+

@@ -4,13 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace otherProblems
+namespace StackProblem
 {
-    class Program
+    class programmain
     {
-        static void Main(string[] args)
+         public static void Main()
         {
-            FirstNotRepeatingCharacter.First();
 
         }
     }

@@ -1,1 +1,2 @@
 C:\ngithub\DatastructureandAlgortihm\Tree1\obj\Debug\Tree1.csproj.CoreCompileInputs.cache
+C:\ngithub\DatastructureandAlgortihm\Tree1\obj\Debug\Tree1.csprojResolveAssemblyReference.cache

@@ -43,8 +43,8 @@ namespace LinkedList
                 }
 
                 else
-                    throw new ArgumentException("Object is not a comparable");
-             
+                    // throw new ArgumentException("Object is not a comparable");
+                    return -2;
             }
 
             else if (ty == typeof(string))
@@ -58,8 +58,8 @@ namespace LinkedList
                 }
 
                 else
-                    throw new ArgumentException("Object is not a comparable");
-
+                    // throw new ArgumentException("Object is not a comparable");
+                    return -2;
 
             }
 
@@ -80,7 +80,8 @@ namespace LinkedList
                 }
 
                 else
-                    throw new ArgumentException("Object is not a comparable");
+                    // throw new ArgumentException("Object is not a comparable");
+                    return -2;
             }
 
             else if (ty == typeof(decimal))
@@ -100,8 +101,9 @@ namespace LinkedList
                 }
 
                 else
-                    throw new ArgumentException("Object is not a comparable");
-
+                    //throw new ArgumentException("Object is not a comparable");
+                  
+                    return -2;
             }
 
 

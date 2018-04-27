@@ -5,13 +5,8 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace otherProblems
-{
-    class Program
+{  // given row X column rotate the image in 90 degree
+    class rotatetheimage
     {
-        static void Main(string[] args)
-        {
-            FirstNotRepeatingCharacter.First();
-
-        }
     }
 }

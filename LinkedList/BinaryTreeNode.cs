@@ -40,9 +40,10 @@ namespace LinkedList
                     else
                         return 0;
                 }
-
                 else
-                    throw new ArgumentException("Object is not a comparable");
+                    return -1;
+                //else
+                //throw new ArgumentException("Object is not a comparable");
 
             }
 
@@ -55,9 +56,10 @@ namespace LinkedList
                 {
                     return sfirst.CompareTo(isecond);
                 }
-
                 else
-                    throw new ArgumentException("Object is not a comparable");
+                    return -1;
+                // else
+                //   throw new ArgumentException("Object is not a comparable");
 
 
             }
@@ -67,7 +69,7 @@ namespace LinkedList
                 double dofirst = Convert.ToDouble(this.data);
                 double dosecond = Convert.ToDouble(obj.data);
 
-                if (obj!= null)
+                if (obj != null)
 
                 {
                     if (dofirst > dosecond)
@@ -79,7 +81,10 @@ namespace LinkedList
                 }
 
                 else
-                    throw new ArgumentException("Object is not a comparable");
+                    return -1;
+
+                //else
+                //   throw new ArgumentException("Object is not a comparable");
             }
 
             else if (ty == typeof(decimal))
@@ -99,9 +104,14 @@ namespace LinkedList
                 }
 
                 else
-                    throw new ArgumentException("Object is not a comparable");
+                    return -1;
+                // else
+                //    throw new ArgumentException("Object is not a comparable");
 
             }
+
+            else
+                return -1;
 
 
         }

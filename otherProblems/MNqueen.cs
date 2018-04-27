@@ -9,6 +9,32 @@ namespace otherProblems
     // putting queens on any given row X column chess board so that none of them share the same row ,coloumn or diagonal .
     class MNqueen //M by N chess board
     {
+      /**
+        static void Main(string[] args)
+        {
+            int row, col;
+            row:
+            Console.WriteLine("Enter valid integer value for the row ");
+            string st = Console.ReadLine();
+
+
+            if (!(Int32.TryParse(st, out row)))
+                goto row;
+
+            coloumn:
+            Console.WriteLine("Enter valid integer value for the column ");
+            string st1 = Console.ReadLine();
+
+
+            if (!(Int32.TryParse(st1, out col)))
+                goto coloumn;
+
+            MNqueen.Queen(row, col);
+
+        }
+
+    **/
+
         public static void Queen(int row, int coloumn)
         {
             int[] pos = new int[row]; // to track for each row where in which coloumn the queen can sit.
