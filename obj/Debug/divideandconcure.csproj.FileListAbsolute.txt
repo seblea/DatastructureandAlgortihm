@@ -4,3 +4,4 @@ C:\ngithub\DatastructureandAlgortihm\bin\Debug\ArrayProblem.exe
 C:\ngithub\DatastructureandAlgortihm\bin\Debug\ArrayProblem.pdb
 C:\ngithub\DatastructureandAlgortihm\obj\Debug\ArrayProblem.exe
 C:\ngithub\DatastructureandAlgortihm\obj\Debug\ArrayProblem.pdb
+C:\ngithub\DatastructureandAlgortihm\obj\Debug\divideandconcure.csprojResolveAssemblyReference.cache
