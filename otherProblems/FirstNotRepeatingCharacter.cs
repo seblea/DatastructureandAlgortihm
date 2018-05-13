@@ -6,41 +6,58 @@ using System.Threading.Tasks;
 
 namespace otherProblems
 {  // write a solution that only iterates over the string once and uses o(1) additional memory , assumption is all ints are in small case
-    static class  FirstNotRepeatingCharacter
+
+    public struct CharP
+       { public int index { get;  }
+         public char ch { get; }
+         public int rep { get; set; }
+
+         public CharP(int ind,char c)
+        {
+            index = ind;
+            ch = c;
+            rep = 1;
+
+        }
+    }
+
+static class  FirstNotRepeatingCharacter
     {
+     
         public static void First()
         {
             string s = "abacabad";
+            CharP te;
+            int ind = -1;
 
-            int[] count = new int[26];
-            char tem = '_';
-
-            int t = 0;
-
-            for(int j = 0;j < 25; j++)
-            {
-                count[j] = 0;
-            }
-
+            Dictionary<char,CharP> count = new Dictionary<char, CharP>();
+           
             foreach(char c in s)
             {
-                t = c - 'a';
-                count[t]++;
-
-            }
-
-            foreach(char c in s)
-            {
-                t = c - 'a';
-
-                if (count[t] == 1)
+                ind++;
+                if (count.ContainsKey(c))
                 {
-                    tem = (char)(96 + t);
+                    te = count[c];
+                    te.rep++;
+                }
+                else
+                {
+                    CharP temp=new CharP(ind,c);
+                    count.Add(c, temp);
+
+                }
+
+            }
+
+            foreach(CharP ch in count.Values)
+            {
+                  if(ch.rep ==1)
+                  {
+                    Console.WriteLine(ch.ch);
                     break;
                 }
             }
-
-            Console.WriteLine(tem);
+            
         }
     }
 }

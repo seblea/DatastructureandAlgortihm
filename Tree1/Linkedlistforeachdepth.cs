@@ -11,7 +11,7 @@ namespace tree1
     class inkedlistforeachdepth
     {  //Given a BST ,creat a linked list of all nodes at each depth 
 
-        public static void Creat(BinaryTreeNode root) // The stack holds the head node of each depth
+        public static void Creat(BinaryTreeNode root) 
         { //using breadth traversal
 
 
@@ -36,7 +36,7 @@ namespace tree1
             Stack<Node> level = new Stack<Node>();
 
             int current = 0;// to track number of node in current  depth
-            int count = 0;// to track number of node that should be DeEnque at each depth .
+            int count = 0;// to track number of node that should be DeEnqueue at each depth .
             int next = 0; // counter for possible number of next depth node 
 
             BinaryTreeNode tempnode = null;
