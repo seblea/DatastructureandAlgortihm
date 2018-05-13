@@ -53,6 +53,8 @@
     <Compile Include="MaxHeapBinaryTree.cs" />
     <Compile Include="InorderSucessor.cs" />
     <Compile Include="InOrderTraverse.cs" />
+    <Compile Include="PostorderTravesal.cs" />
+    <Compile Include="preorderTravesal.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SearchBinaryTree.cs" />

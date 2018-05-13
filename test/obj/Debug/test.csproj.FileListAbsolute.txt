@@ -1,0 +1,7 @@
+C:\ngithub\DatastructureandAlgortihm\test\bin\Debug\test.exe.config
+C:\ngithub\DatastructureandAlgortihm\test\bin\Debug\test.exe
+C:\ngithub\DatastructureandAlgortihm\test\bin\Debug\test.pdb
+C:\ngithub\DatastructureandAlgortihm\test\obj\Debug\test.csprojResolveAssemblyReference.cache
+C:\ngithub\DatastructureandAlgortihm\test\obj\Debug\test.csproj.CoreCompileInputs.cache
+C:\ngithub\DatastructureandAlgortihm\test\obj\Debug\test.exe
+C:\ngithub\DatastructureandAlgortihm\test\obj\Debug\test.pdb

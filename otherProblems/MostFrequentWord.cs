@@ -31,7 +31,7 @@ namespace otherProblems
                     temp[i] = (int)ent.Key;
                     i++;
                 }
-                else 
+m                else 
                 {
                       if (i < x)  // number of words get is less than number of words required
                          j = i; 

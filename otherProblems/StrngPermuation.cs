@@ -12,7 +12,7 @@ namespace otherProblems
     {
         public static void Generate(string st)
         {
-
+              
             Dictionary<string, int> permu = Permuation(st, 0, st.Length); // starting index 0 given lenght of the stirng
 
             foreach (string s in permu.Keys)
@@ -46,7 +46,7 @@ namespace otherProblems
                 // generate permuation for sta up to the end 
                 foreach (string ss in stcoll.Keys)
                 {
-
+                    
                     for (int i = 0; i < len; i++) // starting from the postion 0 ,place character st[sta] into different postion 
                     {
                         sa = Put(c, ss, i);

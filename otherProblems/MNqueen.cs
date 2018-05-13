@@ -37,7 +37,7 @@ namespace otherProblems
 
         public static void Queen(int row, int coloumn)
         {
-            int[] pos = new int[row]; // to track for each row where in which coloumn the queen can sit.
+            int[] pos = new int[row]; // to track for each row where at which coloumn the queen can sit.
 
             // set first for each row the queen are not sit in any column with value -1
             for (int i = 0; i < row; i++)
@@ -45,7 +45,7 @@ namespace otherProblems
                 pos[i] = -1;
             }
 
-            Position(0, row, coloumn, pos); // 
+            Position(0, row, coloumn, pos); // start from row 0 sit the queen 
 
 
             if (pos[0] == -1)//if all value of the pos is -1 .it is not possible to put the queen on the board
@@ -69,13 +69,13 @@ namespace otherProblems
 
             bool sit = false;
 
-            if (at == row)
+            if (at == row) // rows are exchusted 
 
                 return;
 
             if (at == 0) // the first row
             {
-                if (pos[at] + 1 >= coloumn) // it is inpossible to sit the queen in the given chess board
+                if (pos[at] + 1 >= coloumn) // it is impossible to sit the queen in the given chess board
                 {
                     pos[at] = -1;
                     sit = false;
@@ -83,18 +83,18 @@ namespace otherProblems
                 }
                 else
                 {
-                    pos[0] = pos[0] + 1;
+                    pos[0] = pos[0] + 1; // sit to next column 
                     sit = true;
                 }
             }
 
             else
             {
-                sit = IsSit(at, coloumn, pos);
+                sit = IsSit(at, coloumn, pos); // is that possible to sit at "at" row 
             }
 
 
-            if (sit == false)
+            if (sit == false) // 
             {
                 Position(at - 1, row, coloumn, pos);
             }
@@ -108,13 +108,13 @@ namespace otherProblems
 
         static bool IsSit(int at, int coloumn, int[] pos)
         {
-            int st;
+            int st; // iterator
             bool eva;
             bool sit = false;
             int i;
             for (st = pos[at] + 1; st < coloumn; st++)
             {
-                for (i = 0; i < at; i++)
+                for (i = 0; i < at; i++) // check for the above rows for the invariant 
                 {
                     eva = (Math.Abs(at - i) == Math.Abs(st - pos[i]) || (st == pos[i]));
                     //Math.Abs(at - i) == Math.Abs(st - pos[i]) for diagonal 
@@ -126,7 +126,7 @@ namespace otherProblems
                     }
                 }
 
-                if (i >= at)
+                if (i >= at) // if the above rows exchusted for column value st and the invariant is fullfilled 
                 {
                     pos[at] = st;
                     sit = true;
@@ -138,7 +138,7 @@ namespace otherProblems
             }
 
             if (sit == false)
-                pos[at] = -1;// It is not possible to sit the quen in the given row ,at. hence resetting the postion to the beginning
+                pos[at] = -1;// It is not possible to sit the queen in the given row ,at. hence resetting the postion to the beginning
 
             return sit;
         }

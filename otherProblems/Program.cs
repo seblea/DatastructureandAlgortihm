@@ -10,7 +10,10 @@ namespace otherProblems
     {
         static void Main(string[] args)
         {
-            FirstNotRepeatingCharacter.First();
+            Console.WriteLine("enter");
+            string st=Console.ReadLine();
+
+            StringUnique.checkUnique(st);
 
         }
     }

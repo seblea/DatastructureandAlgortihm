@@ -25,7 +25,7 @@ namespace Tree1
 
 
 
-        public static int Balanced(BinaryTreeNode root ,ref  bool bala) // default valu of balla is true.The function  returns the its height to the parent then  compare left and right height update bala ,
+        public static int Balanced(BinaryTreeNode root ,ref  bool bala) // default valu of balla is true.The function  returns  its height to the parent then  compare left and right height update bala ,
             //bala is common for all each recursion,since it is by reference . each recursion will update it if only if  the difference between left height and right height 
             //is greter than one ,when it is unblanced .
         {

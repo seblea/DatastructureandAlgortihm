@@ -7,7 +7,7 @@ using LinkedList;
 
 namespace BinaryTree
 {
-    class InOrderTraverse // whether we have parent pointer or not we need track of grand grand parent,which one is not traverse . The easiest is using stack 
+    class InOrderTraverse // whether we have parent pointer or not we need track of grand grand parent,which one is not traverse . using stack 
     {
         public static Queue<BinaryTreeNode> Inorder(BinaryTreeNode root) // you can display the result directly  , but return in Queue for general 
         {
@@ -29,13 +29,7 @@ namespace BinaryTree
                 else
                 {
                     ro = stak.Pop();
-                    que.Enqueue(ro);
-
-                    if (stak != null)
-                    {
-                        ro = stak.Pop();
-                        que.Enqueue(ro);
-                    }
+                    que.Enqueue(ro); // or display here 
                     ro = ro.right;
                 }
             }
