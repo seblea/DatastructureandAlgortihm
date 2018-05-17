@@ -14,6 +14,8 @@ namespace otherProblems
             int[] temp = new int[x]; // hold frequencies of top X in descending order
             int swap;
 
+            
+
             Hashtable te = new Hashtable(); // to hold most top x words frequency as key
             Hashtable words = new Hashtable(); // hold  all words with their frequncy 
 

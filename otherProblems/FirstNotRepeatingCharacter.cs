@@ -5,59 +5,41 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace otherProblems
-{  // write a solution that only iterates over the string once and uses o(1) additional memory , assumption is all ints are in small case
-
-    public struct CharP
-       { public int index { get;  }
-         public char ch { get; }
-         public int rep { get; set; }
-
-         public CharP(int ind,char c)
-        {
-            index = ind;
-            ch = c;
-            rep = 1;
-
-        }
-    }
+{  // write a solution that only iterates over the string once and uses o(1) additional memory , assumption is all char are in small case
 
 static class  FirstNotRepeatingCharacter
     {
-     
-        public static void First()
+
+        public static int FirstnotRepeating(string st, int at, int[] ch)
         {
-            string s = "abacabad";
-            CharP te;
-            int ind = -1;
+            if (st.Length == at)
+                return -1;
 
-            Dictionary<char,CharP> count = new Dictionary<char, CharP>();
-           
-            foreach(char c in s)
-            {
-                ind++;
-                if (count.ContainsKey(c))
-                {
-                    te = count[c];
-                    te.rep++;
-                }
-                else
-                {
-                    CharP temp=new CharP(ind,c);
-                    count.Add(c, temp);
+          int c = st[at];
+          ch[c]++;
+          int not= FirstnotRepeating(st, at + 1, ch);
 
-                }
-
-            }
-
-            foreach(CharP ch in count.Values)
-            {
-                  if(ch.rep ==1)
-                  {
-                    Console.WriteLine(ch.ch);
-                    break;
-                }
-            }
+            if (ch[c] == 1)
+                not = c;
             
+               return not;
+        }
+
+
+
+
+
+        public static void First()
+        {   //assumption character encode is unicode
+
+
+            string s = "abacabad";
+            int[] ch = new int[256];
+            int not= FirstnotRepeating(s, 0, ch);
+
+            Console.WriteLine("the first non repeating charchter is {0}", s[not]);
+            Console.ReadKey();
+
         }
     }
 }

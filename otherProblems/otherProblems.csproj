@@ -50,7 +50,9 @@
     <Compile Include="DutchFlagProblem.cs" />
     <Compile Include="FirstNotRepeatingCharacter.cs" />
     <Compile Include="GCD.cs" />
+    <Compile Include="Hastable.cs" />
     <Compile Include="InfixtoPostfix.cs" />
+    <Compile Include="MaxandMin.cs" />
     <Compile Include="MNqueen.cs" />
     <Compile Include="MostFrequentWord.cs" />
     <Compile Include="Permituation.cs" />

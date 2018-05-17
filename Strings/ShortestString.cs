@@ -11,11 +11,10 @@ namespace Strings
 
         public static char[] ShortString(string st1, string st2)
         {
-            // let first get the largest common subsequence
+            //// let first get the largest common subsequence
 
             char[] st = LongSubSequence.Long(st1, st2);
-
-
+            
             int ln1, ln2, ln3, i;
             ln1 = 0;
             ln2 = 0;
