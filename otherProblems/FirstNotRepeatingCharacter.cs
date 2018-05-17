@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace otherProblems
-{  // write a solution that only iterates over the string once and uses o(1) additional memory , assumption is all char are in small case
+{    // any type of character 
 
 static class  FirstNotRepeatingCharacter
     {
@@ -30,7 +30,7 @@ static class  FirstNotRepeatingCharacter
 
 
         public static void First()
-        {   //assumption character encode is unicode
+        {   //assumption character encode is unicode 
 
 
             string s = "abacabad";
