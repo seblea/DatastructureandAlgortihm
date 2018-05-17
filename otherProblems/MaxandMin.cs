@@ -17,8 +17,8 @@ namespace otherProblems
             if (end - st <= 1)
             {
                    
-                    mam[0] = arr[0] < arr[1]? arr[0]:arr[1];
-                    mam[1] = arr[0] > arr[1] ? arr[0] : arr[1];
+                    mam[0] = arr[st] < arr[end]? arr[st]:arr[end];
+                    mam[1] = arr[st] > arr[end] ? arr[st] : arr[end];
 
                 return mam;
 
