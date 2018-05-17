@@ -17,8 +17,8 @@ namespace otherProblems
             if (end - st <= 1)
             {
                    
-                    mam[0] = arr[st] < arr[end]? arr[st]:arr[end];
-                    mam[1] = arr[st] > arr[end] ? arr[st] : arr[end];
+                    mam[0] = arr[st] <= arr[end]? arr[st]:arr[end];
+                    mam[1] = arr[st] >= arr[end] ? arr[st] : arr[end];
 
                 return mam;
 
@@ -30,8 +30,8 @@ namespace otherProblems
           int[] mm1=   MaxMin(arr, st, mid);
           int[] mm2= MaxMin(arr, mid+1, end);
 
-         mam[0] =  mm1[0] < mm2[0] ? mm1[0]:mm2[0]  ;
-         mam[1]= mm1[1] > mm2[1] ? mm1[1] : mm2[1];
+         mam[0] =  mm1[0] <= mm2[0] ? mm1[0]:mm2[0]  ;
+         mam[1]= mm1[1] >= mm2[1] ? mm1[1] : mm2[1];
 
             return mam;
         }
