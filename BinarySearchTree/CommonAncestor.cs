@@ -13,6 +13,69 @@ namespace BinaryTree
     **///
     class Ancestor
     {
+         // recursively find them 
+        public static BinaryTreeNode CAncestor(BinaryTreeNode root,ref BinaryTreeNode lcs,params BinaryTreeNode [] node1)
+        {
+            if (root == null)
+                return null;
+
+            if (node1.Length == 1) // only to search one node 
+            {   if (root == node1[0])
+                    return root;
+                else
+                { BinaryTreeNode left = CAncestor(root.left,ref lcs, node1);
+                  BinaryTreeNode right = CAncestor(root.right,ref lcs, node1);
+
+                  return right != null ? right : left;
+                }
+            }
+
+            else
+            {
+                if (root == node1[0] || root == node1[0])
+                {
+                    if (root == node1[0])
+                    {
+                        BinaryTreeNode left = CAncestor(root.left, ref lcs, node1[1]);// only search one node
+                        BinaryTreeNode right = CAncestor(root.right, ref lcs, node1[1]);
+
+                        if (left != null || right != null)
+                            lcs = root;// 
+
+                         return root; 
+
+                    }
+
+                    else
+                    {
+                        BinaryTreeNode left = CAncestor(root.left, ref lcs, node1[0]);
+                        BinaryTreeNode right = CAncestor(root.right, ref lcs, node1[0]);
+
+                        if (left != null || right != null)
+                            lcs = root;
+
+                        return root;
+
+                    }
+
+                }
+                else
+                {
+                    BinaryTreeNode left = CAncestor(root.left, ref lcs, node1);
+                    BinaryTreeNode right = CAncestor(root.right, ref lcs, node1);
+
+                    if (left != null && right != null)
+                        lcs = root;
+
+                     return left != null ? left : right;
+                }
+
+            }
+
+        }
+
+        
+        //option two , first find the two node with their height and adjust both to be in the same height and iteratively trace back their parent
         public static BinaryTreeNode CommonAnecstor(BinaryTreeNode root ,BinaryTreeNode node1, BinaryTreeNode node2) // tree with given root find ancestor of node1 and node 2
         {
             BinaryTreeNode ro = root;

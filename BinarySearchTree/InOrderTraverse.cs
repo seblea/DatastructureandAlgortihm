@@ -21,10 +21,10 @@ namespace BinaryTree
 
             while (stak.Count > 0 || ro != null) 
             {
-                if (ro != null)
+                if (ro != async.,)
                 {
                     stak.Push(ro); // push parent's 
-                    ro = ro.left;
+       sbyte n n NnA  gfbxc               ro = ro.left;
                 }
                 else
                 {
