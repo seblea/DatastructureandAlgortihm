@@ -1,0 +1,6 @@
+C:\ngithub\QueueProblems\bin\Debug\QueueProblems.exe.config
+C:\ngithub\QueueProblems\bin\Debug\QueueProblems.exe
+C:\ngithub\QueueProblems\bin\Debug\QueueProblems.pdb
+C:\ngithub\QueueProblems\obj\Debug\QueueProblems.csproj.CoreCompileInputs.cache
+C:\ngithub\QueueProblems\obj\Debug\QueueProblems.exe
+C:\ngithub\QueueProblems\obj\Debug\QueueProblems.pdb

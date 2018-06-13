@@ -1,0 +1,6 @@
+C:\ngithub\DynamicProgramming\bin\Debug\DynamicProgramming.exe.config
+C:\ngithub\DynamicProgramming\bin\Debug\DynamicProgramming.exe
+C:\ngithub\DynamicProgramming\bin\Debug\DynamicProgramming.pdb
+C:\ngithub\DynamicProgramming\obj\Debug\DynamicProgramming.csproj.CoreCompileInputs.cache
+C:\ngithub\DynamicProgramming\obj\Debug\DynamicProgramming.exe
+C:\ngithub\DynamicProgramming\obj\Debug\DynamicProgramming.pdb

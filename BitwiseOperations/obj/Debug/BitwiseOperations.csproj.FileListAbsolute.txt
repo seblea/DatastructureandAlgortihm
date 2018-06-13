@@ -1,0 +1,1 @@
+C:\ngithub\BitwiseOperations\obj\Debug\BitwiseOperations.csproj.CoreCompileInputs.cache

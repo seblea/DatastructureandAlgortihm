@@ -1,0 +1,6 @@
+C:\ngithub\sorting\bin\Debug\sorting.exe.config
+C:\ngithub\sorting\bin\Debug\sorting.exe
+C:\ngithub\sorting\bin\Debug\sorting.pdb
+C:\ngithub\sorting\obj\Debug\sorting.csproj.CoreCompileInputs.cache
+C:\ngithub\sorting\obj\Debug\sorting.exe
+C:\ngithub\sorting\obj\Debug\sorting.pdb
