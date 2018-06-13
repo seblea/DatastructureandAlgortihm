@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{BC534E43-C954-42C7-A79B-B1C9F24C272F}</ProjectGuid>
+    <ProjectGuid>{625BDBF6-9A07-4C6A-B3E7-B2B6869B6D48}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>otherProblems</RootNamespace>
-    <AssemblyName>otherProblems</AssemblyName>
+    <RootNamespace>QueueProblems</RootNamespace>
+    <AssemblyName>QueueProblems</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,28 +43,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AnimalShelter.cs" />
-    <Compile Include="Bitwiseoperation.cs" />
-    <Compile Include="CoinChange.cs" />
-    <Compile Include="DecimaltoBinary.cs" />
-    <Compile Include="dicitionary.cs" />
-    <Compile Include="DutchFlagProblem.cs" />
-    <Compile Include="FirstNotRepeatingCharacter.cs" />
-    <Compile Include="GCD.cs" />
-    <Compile Include="Hastable.cs" />
-    <Compile Include="InfixtoPostfix.cs" />
-    <Compile Include="MaxandMin.cs" />
-    <Compile Include="MediantwoSortedArray.cs" />
-    <Compile Include="MNqueen.cs" />
-    <Compile Include="MostFrequentWord.cs" />
-    <Compile Include="Permituation.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="random.cs" />
-    <Compile Include="rotatetheimage.cs" />
-    <Compile Include="splitintoword.cs" />
-    <Compile Include="StringUnique.cs" />
-    <Compile Include="StrngPermuation.cs" />
-    <Compile Include="TextSplitJustificaion.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

@@ -1,0 +1,6 @@
+C:\ngithub\graph\obj\Debug\graph.csproj.CoreCompileInputs.cache
+C:\ngithub\graph\bin\Debug\graph.exe.config
+C:\ngithub\graph\bin\Debug\graph.exe
+C:\ngithub\graph\bin\Debug\graph.pdb
+C:\ngithub\graph\obj\Debug\graph.exe
+C:\ngithub\graph\obj\Debug\graph.pdb
