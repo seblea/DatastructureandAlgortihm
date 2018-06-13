@@ -56,7 +56,6 @@
     <Compile Include="MediantwoSortedArray.cs" />
     <Compile Include="MNqueen.cs" />
     <Compile Include="MostFrequentWord.cs" />
-    <Compile Include="Permituation.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="random.cs" />

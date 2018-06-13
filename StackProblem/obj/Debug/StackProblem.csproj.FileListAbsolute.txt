@@ -4,4 +4,3 @@ C:\ngithub\DatastructureandAlgortihm\StackProblem\bin\Debug\StackProblem.exe
 C:\ngithub\DatastructureandAlgortihm\StackProblem\bin\Debug\StackProblem.pdb
 C:\ngithub\DatastructureandAlgortihm\StackProblem\obj\Debug\StackProblem.exe
 C:\ngithub\DatastructureandAlgortihm\StackProblem\obj\Debug\StackProblem.pdb
-C:\ngithub\DatastructureandAlgortihm\StackProblem\obj\Debug\StackProblem.csprojResolveAssemblyReference.cache

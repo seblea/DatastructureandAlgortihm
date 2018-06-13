@@ -4,4 +4,3 @@ C:\ngithub\DatastructureandAlgortihm\Strings\bin\Debug\Strings.exe
 C:\ngithub\DatastructureandAlgortihm\Strings\bin\Debug\Strings.pdb
 C:\ngithub\DatastructureandAlgortihm\Strings\obj\Debug\Strings.exe
 C:\ngithub\DatastructureandAlgortihm\Strings\obj\Debug\Strings.pdb
-C:\ngithub\DatastructureandAlgortihm\Strings\obj\Debug\Strings.csprojResolveAssemblyReference.cache
